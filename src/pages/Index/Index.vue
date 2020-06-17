@@ -17,11 +17,11 @@
       </div>
     </div>
     <!-- 简介 -->
-    <div class="section brief-intro">凤凰岗简介</div>
+    <div class="section brief-intro">凤凰岗简介123</div>
 
     <div class="iframe-box" v-show="showIframe">
       <i class="icon-close" @click="showIframe=false"></i>
-      <iframe id='iframe' scrolling="yes" width="960px" height="1000px" src='https://www.baidu.com' frameborder="0" ></iframe>
+      <iframe id='iframe' scrolling="no" width="960px" height="1000px" src='https://www.baidu.com' frameborder="0" ></iframe>
     </div>
   </div>
 </template>
