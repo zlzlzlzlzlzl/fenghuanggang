@@ -17,11 +17,18 @@
       </div>
     </div>
     <!-- 简介 -->
-    <div class="section brief-intro">凤凰岗简介123</div>
+    <div class="section brief-intro">凤凰岗简介</div>
 
     <div class="iframe-box" v-show="showIframe">
       <i class="icon-close" @click="showIframe=false"></i>
-      <iframe id='iframe' scrolling="no" width="960px" height="1000px" src='https://www.baidu.com' frameborder="0" ></iframe>
+      <iframe
+        id="iframe"
+        scrolling="no"
+        width="960px"
+        height="1000px"
+        src="https://www.baidu.com"
+        frameborder="0"
+      ></iframe>
     </div>
   </div>
 </template>
@@ -35,7 +42,7 @@ export default {
   data() {
     //这里存放数据
     return {
-      showIframe:false
+      showIframe: false
     };
   },
   //监听属性 类似于data概念
@@ -66,14 +73,15 @@ export default {
   padding: 36px 30px 0;
   .section {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
-    background-color: #eee;
+    // background-color: #eee;
   }
   .welcome {
     height: 360px;
-
+    background: url("./imgs/top.jpg") no-repeat;
+    background-size: cover;
     .welcome-title {
       font-family: SimSun;
       font-size: 88px;
@@ -89,6 +97,8 @@ export default {
   }
   .west-lake {
     height: 360px;
+    background: url("./imgs/img_1.jpg") no-repeat;
+    background-size: cover;
     .west-lake-title {
       font-family: PingFangSC-Regular;
       font-size: 46px;
@@ -119,6 +129,8 @@ export default {
       letter-spacing: 0px;
       color: #ffffff;
       margin-right: 40px;
+      background: url("./imgs/img_2.jpg") no-repeat;
+      background-size: cover;
     }
     .fun-list {
       flex: 1;
@@ -163,16 +175,18 @@ export default {
     font-stretch: normal;
     letter-spacing: 0px;
     color: #ffffff;
+    background: url("./imgs/img_3.jpg") no-repeat;
+    background-size: cover;
   }
-  .iframe-box{
+  .iframe-box {
     width: 960px;
     height: 1000px;
     position: fixed;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     z-index: 9999;
-    .icon-close{
+    .icon-close {
       width: 100px;
       height: 100px;
       position: absolute;
@@ -182,7 +196,6 @@ export default {
       background-color: #000;
       border-radius: 50%;
     }
-  
   }
 }
 </style>
